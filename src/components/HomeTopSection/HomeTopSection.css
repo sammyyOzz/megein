@@ -1,0 +1,30 @@
+.homeTopSection {
+    height: calc(100vh - 80px);
+    background-image: url('../../assets/images/women1.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    color: white;
+}
+
+.homeTopSection > div {
+    height: 100%;
+    background-color: #c9ae5d85;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeTopSection h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 45px;
+}
+
+.homeTopSection p {
+    width: 62%;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 14px;
+    line-height: 22px;
+}
