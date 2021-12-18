@@ -1,0 +1,9 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__container {
+    width: 70%;
+}

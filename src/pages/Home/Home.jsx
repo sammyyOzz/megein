@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import HomeTopSection from '../../components/HomeTopSection/HomeTopSection'
-import Projects from '../../components/Projects/Projects'
+import HomeTopSection from './HomeTopSection'
+import ProjectsSection from './ProjectsSection'
 import WhatWeDo from '../../components/WhatWeDo/WhatWeDo'
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
         <Fragment>
             <HomeTopSection />
             <WhatWeDo />
-            <Projects />
+            <ProjectsSection />
         </Fragment>
     )
 }

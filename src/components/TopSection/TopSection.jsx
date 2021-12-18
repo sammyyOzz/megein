@@ -2,10 +2,10 @@ import { Grid } from '@mui/material'
 import React from 'react'
 import './TopSection.css'
 
-function TopSection({ title, text, image }) {
+function TopSection({ title, text, image, className }) {
     
     return (
-        <div className="topSection">
+        <div className={`topSection ${className}`}>
             <div className="topSection__container">
                 <Grid container columns={18}>
                     <Grid item xs={2} md={4} />

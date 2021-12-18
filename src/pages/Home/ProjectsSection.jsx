@@ -1,9 +1,9 @@
 import React from 'react'
-import './Projects.css'
+import './ProjectsSection.css'
 import circle5 from '../../assets/icons/circle5.png'
 import circle2 from '../../assets/icons/circle2.png'
 
-function Projects() {
+function ProjectsSection() {
 
     return (
         <section className="projects">
@@ -28,4 +28,4 @@ function Projects() {
     )
 }
 
-export default Projects
+export default ProjectsSection

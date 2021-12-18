@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
         </Switch>
         <Footer />
     </div>
