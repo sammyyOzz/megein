@@ -1,16 +1,16 @@
-// import women2 from '../../assets/images/women2.png'
+import women2 from '../../assets/images/women2.png'
 
 export const projectsData = [
     {
         title: 'Lorem Ipsum Header',
         date: 'Lorem Ipsum Date dd/mm/yyyy',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum quis sapien id volutpat. Aenean eu tincidunt eros. In hac habitasse platea dictumst. Integer pulvinar sem odio, nec interdum quam eleifend vitae. Duis volutpat facilisis maximus. Nulla vulputate in erat ac viverra. Nunc tempor nunc convallis diam posuere, sit amet porttitor ligula consequat. Nam sed finibus est, vitae dignissim purus. Ut velit urna, iaculis non vestibulum vel, finibus nec justo. Morbi id tortor condimentum, auctor odio vitae, imperdiet magna. In hac habitasse platea dictumst. Nam vitae odio pellentesque, eleifend orci a, ullamcorper ante. Phasellus aliquet accumsan magna vitae laoreet. Praesent placerat magna ut lacinia ultricies. Donec auctor fermentum nulla. Curabitur accumsan dolor commodo tristique molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec dictum porttitor ex. Vestibulum ornare gravida tincidunt. Ut consectetur nunc eget tristique efficitur. Phasellus viverra pulvinar lorem ac consectetur. Quisque ac mauris volutpat turpis luctus aliquam scelerisque eget dui. Cras porttitor finibus risus, a euismod ipsum porta vitae. Aliquam vehicula, est a laoreet gravida, tellus dui rutrum odio, ac ultrices tellus orci sit amet nisl. Nullam placerat dui et tortor malesuada aliquet. Aliquam laoreet massa non nibh fringilla faucibus.',
-        // image: {women2}
+        image: {women2}
     },
     {
         title: 'Lorem Ipsum Header',
         date: 'Lorem Ipsum Date dd/mm/yyyy',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum quis sapien id volutpat. Aenean eu tincidunt eros. In hac habitasse platea dictumst. Integer pulvinar sem odio, nec interdum quam eleifend vitae. Duis volutpat facilisis maximus. Nulla vulputate in erat ac viverra. Nunc tempor nunc convallis diam posuere, sit amet porttitor ligula consequat. Nam sed finibus est, vitae dignissim purus. Ut velit urna, iaculis non vestibulum vel, finibus nec justo. Morbi id tortor condimentum, auctor odio vitae, imperdiet magna. In hac habitasse platea dictumst. Nam vitae odio pellentesque, eleifend orci a, ullamcorper ante. Phasellus aliquet accumsan magna vitae laoreet. Praesent placerat magna ut lacinia ultricies. Donec auctor fermentum nulla. Curabitur accumsan dolor commodo tristique molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec dictum porttitor ex. Vestibulum ornare gravida tincidunt. Ut consectetur nunc eget tristique efficitur. Phasellus viverra pulvinar lorem ac consectetur. Quisque ac mauris volutpat turpis luctus aliquam scelerisque eget dui. Cras porttitor finibus risus, a euismod ipsum porta vitae. Aliquam vehicula, est a laoreet gravida, tellus dui rutrum odio, ac ultrices tellus orci sit amet nisl. Nullam placerat dui et tortor malesuada aliquet. Aliquam laoreet massa non nibh fringilla faucibus.',
-        // image: {women2}
+        image: {women2}
     }
 ]

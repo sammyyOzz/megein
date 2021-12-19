@@ -11,6 +11,10 @@
     background-color: #c9ae5d80;
 }
 
+.topSection__container.topSection__projectPage {
+    background-color: #C89704;
+}
+
 .topSection > img {
     position: absolute;
     top: 0;

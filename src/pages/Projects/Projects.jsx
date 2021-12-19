@@ -21,6 +21,7 @@ function Projects() {
                 Lorem ipsum dolor met, cor adipiscing elitPraesent rutrum a 
                 turpis vel iaculis. Morbi ac lorem s"
                 image={projectsPageImage}
+                projectPage
             />
             <section className="projects">
                 <div className="projects__container">
