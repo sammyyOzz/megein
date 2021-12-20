@@ -6,18 +6,38 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import ScrollToTop from './Hooks/ScrollToTop';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
+        <ScrollToTop />
+        <Route
+          render={({ location }) => {
+            return (
+              <>
+                <TransitionGroup component={null}>
+                  <CSSTransition
+                    timeout={300}
+                    classNames="page"
+                    key={location.key}
+                  >
+                    <Switch location={location}>
+                      <Route exact path="/" component={Home} />
+                      <Route exact path="/about" component={About} />
+                      <Route exact path="/projects" component={Projects} />
+                      <Route exact path="/contact" component={Contact} />
+                    </Switch>
+                  </CSSTransition>
+                </TransitionGroup>
+              </>
+            )
+          }}
+        />
         <Footer />
     </div>
     </Router>
@@ -25,3 +45,5 @@ function App() {
 }
 
 export default App;
+
+
