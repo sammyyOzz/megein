@@ -1,4 +1,4 @@
-import React, { Fragment, useReducer, useState } from 'react'
+import React, { Fragment, useReducer, useRef, useState } from 'react'
 import TopSection from '../../components/TopSection/TopSection'
 import contactPageImage from '../../assets/images/contactPageImage.png'
 import { Grid } from '@mui/material'
@@ -11,6 +11,8 @@ import circle5 from '../../assets/icons/circle5.png'
 import circle2 from '../../assets/icons/circle2.png'
 import CircularProgress from '@mui/material/CircularProgress';
 import Snackbar from '../../components/Snackbar/Snackbar'
+import emailjs from 'emailjs-com'
+
 
 const contactReducer = (state, action) => {
     switch (action.type) {
@@ -24,7 +26,7 @@ const contactReducer = (state, action) => {
             return { severity: 'error', open: true, loading: false, feedbackMessage: action.feedbackMessage }
 
         case 'CLOSE_SNACKBAR':
-            return { open: false, severity: '', loading: false, feedbackMessage: '' } 
+            return { ...state, open: false, loading: false, feedbackMessage: '' } 
 
         default:
             return state
@@ -50,10 +52,20 @@ function Contact() {
         dispatchContactUs({ type: 'CLOSE_SNACKBAR' })
     };
 
+    const form = useRef()
+
     const handleSubmit = e => {
         e.preventDefault()
 
-        alert('submitted!!!')
+        dispatchContactUs({ type: "LOADING" })
+
+        emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAIL_USER_ID)
+        .then(() => {
+            dispatchContactUs({ type: "SUCCESS", feedbackMessage: 'Your message has been sent successfully!' })
+            setFormData({ firstName: '', lastName: '', email: '', description: '' })
+        }, () => {
+            dispatchContactUs({ type: "ERROR", feedbackMessage: 'An error occurred, please try again later.' })
+        });
     }
 
     return (
@@ -68,7 +80,7 @@ function Contact() {
             />
             <section className="contact">
                 <h1>CONTACT US</h1>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} ref={form}>
                     <Grid container>
                         <Grid item xs={1} sm={2} md={4} />
                         <Grid item container spacing={2} xs={10} sm={8} md={4}>
@@ -106,7 +118,7 @@ function Contact() {
                         <Grid item xs={1} sm={2} md={4} />
                     </Grid>
                     <div className="contact__buttonContainer">
-                        <Button type="submit">{ !loading ? "Submit": <CircularProgress size={25} /> }</Button>
+                        <Button type="submit">{ !loading ? "Submit": <CircularProgress size={25} sx={{ color: 'white' }} /> }</Button>
                     </div>
                 </form>
                 <img src={circle3} alt="" className="contact__circle3" />
