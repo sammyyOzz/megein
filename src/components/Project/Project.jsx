@@ -8,8 +8,8 @@ function Project({ className, title, date, text, image }) {
         <div className={`project ${className}`}>
             <h2>{title}</h2>
             <span>{date}</span>
-            <img src={image} alt="" />
-            <p>{text}</p>
+            {/* <img src={image} alt="" /> */}
+            {/* <p>{text}</p> */}
         </div>
     )
 }

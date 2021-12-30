@@ -7,6 +7,10 @@
     margin-bottom: 50px;
 }
 
+.about__content h2 {
+    text-align: center;
+}
+
 .about__content > div > p {
     color: #202020;
     font-size: 14px;
@@ -40,8 +44,29 @@
     transform: scale(.6);
 }
 
+.about__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #202020;
+}
+
+.about__list > li {
+    margin: 5px auto;
+}
+
+.about__grid {
+    color: #202020;
+}
+
 @media(max-width: 900px) {
     .about__content {
         margin-top: 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .about__grid > div:nth-child(even) {
+        margin-bottom: 12px;
     }
 }

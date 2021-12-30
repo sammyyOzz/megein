@@ -15,6 +15,16 @@
     padding-top: 25px;
 }
 
+.contact__details {
+    color: #717171;
+    margin: 0 auto;
+}
+
+.contact__details > p {
+    margin: 10px auto;
+    font-size: 15px;
+}
+
 .contact__circle3 {
     position: absolute;
     top: -80px;

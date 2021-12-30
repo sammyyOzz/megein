@@ -72,10 +72,10 @@ function Contact() {
         <Fragment>
             <TopSection 
                 title="GET IN TOUCH"
-                text="Lorem ipsum dolor sit amet, consectetu r adipiscing elitPraesent 
-                rutrum a turpis vel iaculis. Morbi ac lorem sitamet sem finib
-                Lorem ipsum dolor sit amet, cor adipiscing elitPraesent rutrum a 
-                turpis vel iaculis. Morbi ac"
+                // text="Lorem ipsum dolor sit amet, consectetu r adipiscing elitPraesent 
+                // rutrum a turpis vel iaculis. Morbi ac lorem sitamet sem finib
+                // Lorem ipsum dolor sit amet, cor adipiscing elitPraesent rutrum a 
+                // turpis vel iaculis. Morbi ac"
                 image={contactPageImage}
             />
             <section className="contact">
@@ -84,6 +84,16 @@ function Contact() {
                     <Grid container>
                         <Grid item xs={1} sm={2} md={4} />
                         <Grid item container spacing={2} xs={10} sm={8} md={4}>
+                            <div className="contact__details">
+                                <p><strong>Name:</strong> Assoc. Prof. Nkem Fab-Ukozor</p>
+                                <p><strong>Phone Number:</strong> +234 (0) 8033311410</p>
+                                <p><strong>Address:</strong> Media and Gender Enlightenment Initiative
+                                c/o Department of Mass Communication,
+                                Imo State University,
+                                P.M.B. 2000, Owerri. Nigeria.
+                                E-mail: fabukazor2000@yahoo.com</p>
+                                <h2>Send us a message</h2>
+                            </div>
                             <Input 
                                 half 
                                 type="text"

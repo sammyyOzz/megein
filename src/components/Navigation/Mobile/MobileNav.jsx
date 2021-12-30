@@ -35,7 +35,7 @@ export default function TemporaryDrawer({ logo, pathname }) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
         {/* <img src={logo} alt="" className="mobile__logo" /> */}
-        <div className="mobile__title" style={{ fontWeight: 'bold', fontSize: '30px', textAlign: 'center', margin: '30px auto' }}>MEGEIN</div>
+        <div className="mobile__title" style={{ fontWeight: 'bold', fontSize: '45px', textAlign: 'center', margin: '50px auto 70px auto' }}>MEGEIN</div>
         {/* <Divider style={{ marginTop: '100px' }} /> */}
         <div className="mobile__linksContainer">
             <List>
@@ -45,9 +45,10 @@ export default function TemporaryDrawer({ logo, pathname }) {
                         <ListItem 
                             button 
                             style={{ 
-                                backgroundColor: item.link === pathname && 'skyblue', 
-                                borderBottom: '1px solid rgba(187, 182, 182, 0.445)', 
-                                borderTop: i === 0 && '1px solid rgba(187, 182, 182, 0.445)' 
+                              backgroundColor: item.link === pathname && '#C89704', 
+                              color: item.link === pathname && 'white', 
+                              borderBottom: '1px solid rgba(187, 182, 182, 0.445)', 
+                              borderTop: i === 0 && '1px solid rgba(187, 182, 182, 0.445)' 
                             }}
                         >
                             <ListItemText><strong>{item.name}</strong></ListItemText>

@@ -10,7 +10,7 @@ function Header() {
     return (
         <header className="header">
             <div className="header__container">
-                <div className="header__left">Megein</div>
+                <div className="header__left">MEGEIN</div>
                 <div className="header__right">
                     {
                         navData.map((item, i) => (

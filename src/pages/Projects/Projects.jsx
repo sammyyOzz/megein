@@ -13,13 +13,7 @@ function Projects() {
         <Fragment>
             <TopSection
                 title="PROJECTS"
-                text="Lorem ipsum dolor sit amet, consectetu r adipiscing elitPraesent 
-                rutrum a turpis vel iaculis. Morbi ac lorem sitamet sem finib
-                Lorem ipsum dolor sit amet, cor adipiscing elitPraesent rutrum a 
-                turpis vel iaculis. Morbi ac amet, consectetu r adipiscing elitPraesent 
-                rutrum a turpis vel iaculis. Morbi ac lorem sitamet sem finib
-                Lorem ipsum dolor met, cor adipiscing elitPraesent rutrum a 
-                turpis vel iaculis. Morbi ac lorem s"
+                text="The media and gender enlightenment initiative (MEGEIN) emerged in 2008  as a non-profit organization to serve as a leading organ for media and gender-sensitivty in Nigeria and beyond."
                 image={projectsPageImage}
                 projectPage
             />
@@ -27,6 +21,8 @@ function Projects() {
                 <div className="projects__container">
                     <Project title={projectsData[0].title} date={projectsData[0].date} text={projectsData[0].text} image={women2} />
                     <Project title={projectsData[1].title} date={projectsData[1].date} text={projectsData[1].text} image={women2} />
+                    <Project title={projectsData[2].title} date={projectsData[2].date} text={projectsData[2].text} image={women2} />
+                    <Project title={projectsData[3].title} date={projectsData[3].date} text={projectsData[3].text} image={women2} />
                 </div>
             </section>
         </Fragment>

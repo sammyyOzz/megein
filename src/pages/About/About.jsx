@@ -7,31 +7,76 @@ import circle2 from '../../assets/icons/circle2.png'
 import circle1 from '../../assets/icons/circle1.png'
 import circle4 from '../../assets/icons/circle4.png'
 import microphone from '../../assets/images/microphone.png'
+import { advisoryBoard, boardOfDirectors, objectives, staff } from './aboutData'
 
 function About() {
 
     return (
         <Fragment>
             <TopSection
-                title="WHO ARE WE?"
-                text="Lorem ipsum dolor sit amet, consectetu r adipiscing elitPraesent 
-                rutrum a turpis vel iaculis. Morbi ac lorem sitamet sem finib
-                Lorem ipsum dolor sit amet, cor adipiscing elitPraesent rutrum a 
-                turpis vel iaculis. Morbi ac amet, consectetu r adipiscing elitPraesent 
-                rutrum a turpis vel iaculis. Morbi ac lorem sitamet sem finib
-                Lorem ipsum dolor met, cor adipiscing elitPraesent rutrum a 
-                turpis vel iaculis. Morbi ac lorem s"
+                title="ABOUT THE ORGANIZATION?"
+                text="The birth of the organisation came as a result of the Africa regional gender and media advocacy training seminar co-organized by the World Association for Christian Communication (WACC) and Africa Women and Child Feature Service (AWC) held in Nairobi in 2007."
                 image={microphone}
             />
             <section className="about">
                 <Grid container className="about__content">
                     <Grid item xs={1} md={2} />
                     <Grid item xs={10} md={8}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum quis sapien id volutpat. Aenean eu tincidunt eros. In hac habitasse platea dictumst. Integer pulvinar sem odio, nec interdum quam eleifend vitae. Duis volutpat facilisis maximus. Nulla vulputate in erat ac viverra. Nunc tempor nunc convallis diam posuere, sit amet porttitor ligula consequat. Nam sed finibus est, vitae dignissim purus. Ut velit urna, iaculis non vestibulum vel, finibus nec justo. Morbi id tortor condimentum, auctor odio vitae, imperdiet magna.</p>
-                        <p>In hac habitasse platea dictumst. Nam vitae odio pellentesque, eleifend orci a, ullamcorper ante. Phasellus aliquet accumsan magna vitae laoreet. Praesent placerat magna ut lacinia ultricies. Donec auctor fermentum nulla. Curabitur accumsan dolor commodo tristique molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                        <p>Donec dictum porttitor ex. Vestibulum ornare gravida tincidunt. Ut consectetur nunc eget tristique efficitur. Phasellus viverra pulvinar lorem ac consectetur. Quisque ac mauris volutpat turpis luctus aliquam scelerisque eget dui. Cras porttitor finibus risus, a euismod ipsum porta vitae. Aliquam vehicula, est a laoreet gravida, tellus dui rutrum odio, ac ultrices tellus orci sit amet nisl. Nullam placerat dui et tortor malesuada aliquet. Aliquam laoreet massa non nibh fringilla faucibus.</p>
-                        <p>Morbi et commodo nisi. Sed blandit eros maximus nibh placerat consequat. Aenean in ullamcorper justo. Pellentesque et imperdiet tortor. Curabitur a mollis elit. Sed vestibulum bibendum arcu, vitae vulputate dolor laoreet venenatis. Praesent blandit viverra lectus, vel aliquam lorem placerat eget. Ut et ornare mauris. Nunc vestibulum condimentum diam quis rutrum. Phasellus fringilla ullamcorper eros sit amet maximus. Nam accumsan tortor quis fringilla consequat.</p>
-                        <p>Praesent vitae metus ac magna interdum suscipit. Proin felis leo, pulvinar et nisl consectetur, vestibulum gravida sem. Maecenas imperdiet urna et dui posuere placerat. Fusce eget blandit arcu. Nullam eu imperdiet odio. Nam quis risus tristique, malesuada ante at, euismod sem. In hac habitasse platea dictumst. Sed non sapien elit. Nam vel vestibulum dui. Suspendisse potenti.</p>
+                        <p>During the sessions, the global regional and national findings of the GMMP were extensively reviewed, and discussions were held on how to gradually improve on the ignoble situation of media coverages of gender issues. Eventually, it was clear to me that if the GMMP which was conducted in Nigeria would have meaning as well as impact in the country, there was need to start a non-governmental organization strictly for the purpose of helping to build a gender sensitive mass media in Nigeria. So in the first week of October, 2008, the Media and Gender Enlightenment Initiative was successfully registered by Corporate Affairs Commission (CAC) in Nigeria, though its original name was Society and Media Initiative.</p>
+                        
+                        <h2>OBJECTIVES</h2>
+
+                        {
+                            objectives.map((item, i) => (
+                                <p key={i}>{item}</p>
+                            ))
+                        }
+
+                        <h2>THE TEAM</h2>
+
+                        <h3>Advisory Board</h3>
+                        <ul className="about__list">
+                            {
+                                advisoryBoard.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                ))
+                            }
+                        </ul>
+
+                        <h3>Board of Directors</h3>
+                        <Grid container className="about__grid" rowSpacing={1}>
+                            {
+                                boardOfDirectors.map((item, i) => (
+                                    <Fragment key={i}>
+                                        <Grid item xs={12} sm={6}>
+                                            { item.name }
+                                        </Grid>
+                                        <Grid item xs={12} sm={6}>
+                                            { item.role }
+                                        </Grid>
+                                    </Fragment>
+                                ))
+                            }
+                        </Grid>
+
+                        <h3>Staff</h3>
+
+                        <Grid container className="about__grid" rowSpacing={1}>
+                            {
+                                staff.map((item, i) => (
+                                    <Fragment key={i}>
+                                        <Grid item xs={12} sm={6}>
+                                            { item.name }
+                                        </Grid>
+                                        <Grid item xs={12} sm={6}>
+                                            { item.role }
+                                        </Grid>
+                                    </Fragment>
+                                ))
+                            }
+                        </Grid>
+                    
+                    
                     </Grid>
                     <Grid item xs={1} md={2} />
                 </Grid>

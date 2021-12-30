@@ -7,20 +7,15 @@ function ProjectsSection() {
 
     return (
         <section className="projectsSection">
-            <h1>PROJECTS</h1>
+            <h1>OBJECTIVES</h1>
             <img src={circle5} alt="" className="projectsSection__circle5" />
             <img src={circle2} alt="" className="projectsSection__circle2" />
             <div className="projectsSection__image">
                 <div className="projectsSection__overlay">
                     <div className="projectsSection__overlayContent">
-                        <h2 className="projectsSection__title">Lorem Ipsum Header</h2>
-                        <p className="projectsSection__text">Lorem ipsum dolor sit amet, consectetu r adipiscing elitPraesent 
-                        rutrum a turpis vel iaculis. Morbi ac lorem sitamet sem finib
-                        Lorem ipsum dolor sit amet, cor adipiscing elitPraesent rutrum a 
-                        turpis vel iaculis. Morbi ac amet, consectetu r adipiscing elitPraesent 
-                        rutrum a turpis vel iaculis. Morbi ac lorem sitamet sem finib
-                        Lorem ipsum dolor met, cor adipiscing elitPraesent rutrum a 
-                        turpis vel iaculis. Morbi ac lorem s</p>
+                        <h2 className="projectsSection__title">Objectives</h2>
+                        <p className="projectsSection__text">To continuously monitor the extent of gender sensitivity by Nigerian Mass Media.</p>
+                        <p className="projectsSection__text">To inculcate deep understanding and appreciation of the principles of gender perspective reporting in Nigerian journalists and ensure they put same into practice when reporting gender related issues.</p>
                     </div>
                 </div>
             </div>
