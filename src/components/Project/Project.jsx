@@ -7,7 +7,7 @@ function Project({ className, title, date, text, image }) {
     return (
         <div className={`project ${className}`}>
             <h2>{title}</h2>
-            <span>{date}</span>
+            <h3>-- {date}--</h3>
             {/* <img src={image} alt="" /> */}
             {/* <p>{text}</p> */}
         </div>

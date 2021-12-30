@@ -1,5 +1,8 @@
 .project {
-    margin-bottom: 30px;
+    margin: 30px 20px;
+    box-shadow: 0 0 22px 5px gray;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 .project > h2 {
@@ -8,10 +11,11 @@
     font-size: 30px;
 }
 
-.project > span {
+.project > h3 {
     color: #737373;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: bold;
+    text-align: right;
 }
 
 .project > img {

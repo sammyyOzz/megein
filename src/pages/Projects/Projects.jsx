@@ -5,6 +5,7 @@ import './Projects.css'
 import Project from '../../components/Project/Project'
 import { projectsData } from './projectsData'
 import women2 from '../../assets/images/women2.png'
+import { Grid } from '@mui/material'
 
 
 function Projects() {
@@ -17,14 +18,17 @@ function Projects() {
                 image={projectsPageImage}
                 projectPage
             />
-            <section className="projects">
-                <div className="projects__container">
+
+            <Grid container className="projects">
+                <Grid item xs={1} md={3} />
+                <Grid item xs={10} md={6}>
                     <Project title={projectsData[0].title} date={projectsData[0].date} text={projectsData[0].text} image={women2} />
                     <Project title={projectsData[1].title} date={projectsData[1].date} text={projectsData[1].text} image={women2} />
                     <Project title={projectsData[2].title} date={projectsData[2].date} text={projectsData[2].text} image={women2} />
                     <Project title={projectsData[3].title} date={projectsData[3].date} text={projectsData[3].text} image={women2} />
-                </div>
-            </section>
+                </Grid>
+                <Grid item xs={1} md={3} />
+            </Grid>
         </Fragment>
     )
 }

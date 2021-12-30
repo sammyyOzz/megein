@@ -48,6 +48,16 @@
 }
 
 @media(max-width: 899px) {
+    .topSection {
+        height: auto;
+        padding: 50px auto;
+    }
+
+    .topSection__content > h1 {
+        font-size: 35px;
+        word-wrap: break-word;
+    }
+
     .topSection > img {
         display: none;
     }
