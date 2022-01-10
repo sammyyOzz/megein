@@ -91,7 +91,7 @@ function Contact() {
                                 c/o Department of Mass Communication,
                                 Imo State University,
                                 P.M.B. 2000, Owerri. Nigeria.
-                                E-mail: fabukazor2000@yahoo.com</p>
+                                E-mail: fabukozor2000@yahoo.com</p>
                                 <h2>Send us a message</h2>
                             </div>
                             <Input 

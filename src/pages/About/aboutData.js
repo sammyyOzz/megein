@@ -16,8 +16,8 @@ export const advisoryBoard = [
 
 export const boardOfDirectors = [
     {
-        name: "Dr. Nkem Fab-Ukozor",
-        role: "-(F) Executive Director/Chairperson"
+        name: "Assoc. Prof. Nkem Fab-Ukozor",
+        role: "-(F) Director/Founder"
     },
     {
         name: "Prof. I.C. Okonkwo",
@@ -39,16 +39,16 @@ export const boardOfDirectors = [
 
 export const staff = [
     {
-        name: "Dr. Nkem Fab-Ukozor",
+        name: "Assoc. Prof. Nkem Fab-Ukozor",
         role: "-Project Director"
     },
-    {
-        name: "Dr. Levi Chinaka Nwodu ",
-        role: "-Project Manager "
-    },
+    // {
+    //     name: "Dr. Levi Chinaka Nwodu ",
+    //     role: "-Project Manager "
+    // },
     {
         name: "Dr. Alex Onyebuchi",
-        role: "-Project Secretary "
+        role: "-Project Manager "
     },
     {
         name: "Dr. Fabian Okalla",
@@ -56,10 +56,6 @@ export const staff = [
     },
     {
         name: "Dr. Ifeoma Orjiakor  ",
-        role: "-Project Officer"
+        role: "-Project Secretary"
     },
-    {
-        name: "Prof. Fab Ukozor",
-        role: "-Project Supervisor"
-    }
 ]

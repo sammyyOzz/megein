@@ -8,6 +8,7 @@ import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import ScrollToTop from './Hooks/ScrollToTop';
+import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                       <Route exact path="/about" component={About} />
                       <Route exact path="/projects" component={Projects} />
                       <Route exact path="/contact" component={Contact} />
+                      <Route component={NotFound} />
                     </Switch>
                   </CSSTransition>
                 </TransitionGroup>
