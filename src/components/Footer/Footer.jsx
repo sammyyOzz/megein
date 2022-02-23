@@ -9,7 +9,7 @@ function Footer() {
             <div className="footer__linksContainer">
                 {
                     navData.map((item, i) => (
-                        <Link to={item.link}>
+                        <Link to={item.link} key={i}>
                             { item.name }
                         </Link>
                     ))

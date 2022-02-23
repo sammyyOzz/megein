@@ -9,9 +9,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { navData } from '../navData';
 import { Link } from 'react-router-dom';
 import FadeIn from 'react-fade-in';
+import logo from '../../../assets/images/logo.jpg'
 
 
-export default function TemporaryDrawer({ logo, pathname }) {
+export default function TemporaryDrawer({ pathname }) {
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -34,9 +35,9 @@ export default function TemporaryDrawer({ logo, pathname }) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-        {/* <img src={logo} alt="" className="mobile__logo" /> */}
-        <div className="mobile__title" style={{ fontWeight: 'bold', fontSize: '45px', textAlign: 'center', margin: '50px auto 70px auto' }}>MEGEIN</div>
-        {/* <Divider style={{ marginTop: '100px' }} /> */}
+        <div className="mobile__title" style={{ fontWeight: 'bold', fontSize: '45px', textAlign: 'center', margin: '50px auto 70px auto' }}>
+        <img src={logo} alt="" style={{ width: '120px', height: '120px' }} />
+        </div>
         <div className="mobile__linksContainer">
             <List>
                 <FadeIn delay="90">

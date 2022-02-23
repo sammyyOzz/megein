@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { navData } from '../navData'
 import './Header.css'
 import MobileNav from '../Mobile/MobileNav'
+import logo from '../../../assets/images/logo.jpg'
 
 function Header() {
     const { pathname } = useLocation()
@@ -10,7 +11,10 @@ function Header() {
     return (
         <header className="header">
             <div className="header__container">
-                <div className="header__left">MEGEIN</div>
+                <div className="header__left">
+                    <img src={logo} alt="" />
+                    <span>MEGEIN</span>
+                </div>
                 <div className="header__right">
                     {
                         navData.map((item, i) => (
