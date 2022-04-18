@@ -9,7 +9,7 @@ export const navData = [
     },
     {
         name: 'PROJECTS',
-        link: '/projects'
+        link: '/projects/1'
     },
     {
         name: 'CONTACT',
