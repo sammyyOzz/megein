@@ -5,10 +5,15 @@
     border-radius: 30px;
 }
 
-.project > h2 {
+.project > h2, .project > a {
     color: #737373;
     margin: 0 auto 0 0;
     font-size: 30px;
+}
+
+.project > a {
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .project > h3 {
